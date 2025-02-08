@@ -7,6 +7,8 @@ __pycache__/
 *.so
 lacuna-malaria-detection-dataset
 
+MCD
+
 # Distribution / packaging
 .Python
 build/
