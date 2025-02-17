@@ -6,9 +6,9 @@ __pycache__/
 # C extensions
 *.so
 lacuna-malaria-detection-dataset
-
+*.pth
 MCD
-
+malaria_model_*
 # Distribution / packaging
 .Python
 build/
