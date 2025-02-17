@@ -14,7 +14,7 @@ class ConvBlock(nn.Module):
 
 
 class Malaria_Model(nn.Module):
-    def __init__(self, input_shape=(3, 224, 224), num_classes=2):
+    def __init__(self, input_shape=(3, 224, 224), num_classes=3):
         super().__init__()
         channels, height, width = input_shape
 
