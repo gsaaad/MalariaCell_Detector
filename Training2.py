@@ -271,8 +271,8 @@ def main():
     device = check_gpu()
     
     # Data paths
-    data_folder = Path(r'C:\Users\geosaad\Desktop\MalariaCell_Detector\lacuna-malaria-detection-dataset\images')
-    label_file = Path(r'C:\Users\geosaad\Desktop\MalariaCell_Detector\lacuna-malaria-detection-dataset\Train.csv')
+    data_folder = Path(r'C:\Users\geosaad\Desktop\MalariaCell_Detector\lacuna-malaria-detection-dataset\test')
+    label_file = Path(r'C:\Users\geosaad\Desktop\MalariaCell_Detector\lacuna-malaria-detection-dataset\Train1.csv')
     
     # Training parameters
     num_epochs = 100
@@ -374,19 +374,19 @@ def main():
         early_stopping(val_loss)
         
         # Save best model
-        if val_loss < best_val_loss:
-            best_val_loss = val_loss
-            torch.save({
-                'epoch': epoch,
-                'model_state_dict': model.state_dict(),
-                'optimizer_state_dict': optimizer.state_dict(),
-                'val_loss': val_loss,
-                'metrics': metrics
-            }, 'best_model.pth')
+        # if val_loss < best_val_loss:
+        #     best_val_loss = val_loss
+        #     torch.save({
+        #         'epoch': epoch,
+        #         'model_state_dict': model.state_dict(),
+        #         'optimizer_state_dict': optimizer.state_dict(),
+        #         'val_loss': val_loss,
+        #         'metrics': metrics
+        #     }, 'best_model.pth')
         
-        if early_stopping.early_stop:
-            print("Early stopping triggered")
-            break
+        # if early_stopping.early_stop:
+        #     print("Early stopping triggered")
+        #     break
     
     # Final plotting and saving
     plot_metrics(metrics, 1)

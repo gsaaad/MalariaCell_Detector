@@ -108,8 +108,8 @@ def main():
         print("\nCurrent PyTorch setup:")
         print(f"PyTorch Version: {torch.__version__}")
         print(f"PyTorch CUDA: {torch.version.cuda}")
-    data_folder = Path(r'C:\Users\geosaad\Desktop\MalariaCell_Detector\lacuna-malaria-detection-dataset\test3')
-    label_file = Path(r'C:\Users\geosaad\Desktop\MalariaCell_Detector\lacuna-malaria-detection-dataset\Train.csv')
+    data_folder = Path(r'C:\Users\geosaad\Desktop\MalariaCell_Detector\lacuna-malaria-detection-dataset\test')
+    label_file = Path(r'C:\Users\geosaad\Desktop\MalariaCell_Detector\lacuna-malaria-detection-dataset\Train1.csv')
     
     # Training parameters
     num_epochs = 100
