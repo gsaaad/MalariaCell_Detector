@@ -1,0 +1,8 @@
+Training Summary
+===============
+
+Final Metrics:
+Train Loss: 0.0094
+Train Accuracy: 99.79%
+Validation Loss: 0.1279
+Validation Accuracy: 97.79%
