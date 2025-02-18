@@ -103,7 +103,7 @@ def load_data(data_dir, label_file, pdf_output=False, images_per_pdf=500):
     if pdf_output and current_pdf is not None and count_in_pdf > 0:
         current_pdf.close()
     
-    return np.array(images, dtype=object), np.array(image_ids, dtype=object), np.array(labels, dtype=object), np.array(coordinates, dtype=object)
+    return images, image_ids, labels, coordinates
 
 
 if __name__ == "__main__":
